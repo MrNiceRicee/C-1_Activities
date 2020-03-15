@@ -84,10 +84,92 @@ namespace InClassAssignment7
             return (NumberInt*NumberDouble);
         }
 
+        public int AverageOfMultiDimensionalInt(int[][] Int2D)
+        {
+            return (Int2D.Cast<int>().Sum()/Int2D.Length);      //Take the sum of the entire multidimensional array, then use the length as the divisor for the average
+        }
+
         public Form1()
         {
             InitializeComponent();
             Console.WriteLine(IntTimesDouble(8,10.5));
+        }
+
+
+
+        /*
+TwoIntSum
+FiveDoublesGetAverage
+TwoRandomInts
+TripleDivisibleByThree
+ShorterOfTwoStrings
+BiggestInDoubleArray
+GenerateFiftyNumbers
+SameBool
+IntTimesDouble
+AverageOfMultiDimensionalInt
+*/
+
+        //GenerateFields
+        public void CreateFields()
+        {
+            String selectedmode = this.SelectionBox.SelectedItem.ToString();
+
+
+
+            Label AnswerBox;
+            TextBox Input1;
+            TextBox Input2;
+            TextBox Input3;
+            TextBox Input4;
+            TextBox Input5;
+            CheckBox InputBool1;
+            CheckBox InputBool2;
+
+
+
+            if (selectedmode.Equals("TwoIntSum"))
+            {
+
+            }else if (selectedmode.Equals("FiveDoublesGetAverage"))
+            {
+
+            }
+            else if (selectedmode.Equals("TwoRandomInts"))
+            {
+
+            }
+            else if (selectedmode.Equals("TripleDivisibleByThree"))
+            {
+
+            }
+            else if (selectedmode.Equals("ShorterOfTwoStrings"))
+            {
+
+            }
+            else if (selectedmode.Equals("BiggestInDoubleArray"))
+            {
+
+            }
+            else if (selectedmode.Equals("GenerateFiftyNumbers"))
+            {
+
+            }
+            else if (selectedmode.Equals("SameBool"))
+            {
+
+            }
+            else if (selectedmode.Equals("IntTimesDouble"))
+            {
+
+            }
+            else if (selectedmode.Equals("AverageOfMultiDimensionalInt"))
+            {
+
+            }
+
+
+
         }
     }
 }
